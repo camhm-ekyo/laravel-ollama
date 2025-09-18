@@ -1,3 +1,7 @@
+# 🚧 Development Status: Work in Progress
+
+**Warning:** This package is under active development and not yet stable. APIs and features may change without notice. Use at your own risk in production environments.
+
 # camh/laravel-ollama
 
 Laravel client cho **Ollama** (local LLM): generate, chat, embeddings + PII masking + JSON guardrails.

@@ -76,7 +76,7 @@ class OllamaHttpClient implements OllamaClientContract
 
     public function json(string $instruction, array $opts = [], ?array $schema = null): array
     {
-        $guard = "Chỉ trả JSON thuần, không thêm chữ ngoài JSON.";
+        $guard = "Return pure JSON only, do not include any text outside of the JSON.";
         if ($schema) $guard .= " Schema (JSON Schema): ".json_encode($schema);
 
         $raw = $this->generate($instruction."\n\n".$guard, $opts);
