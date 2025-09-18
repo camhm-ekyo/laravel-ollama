@@ -1,0 +1,38 @@
+{
+  "name": "camh/laravel-ollama",
+  "description": "Laravel client for Ollama (generate, chat, embeddings) with PII masking & JSON helpers.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Camh\\Ollama\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Camh\\Ollama\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "illuminate/support": "^10.0|^11.0",
+    "guzzlehttp/guzzle": "^7.8|^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0",
+    "phpunit/phpunit": "^10.0|^11.0",
+    "mockery/mockery": "^1.6"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Camh\\Ollama\\OllamaServiceProvider"
+      ],
+      "aliases": {
+        "Ollama": "Camh\\Ollama\\Facades\\Ollama"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
